@@ -38,7 +38,7 @@ const testimonials: Testimonial[] = [
     role: 'Backend Developer',
     company: 'Newstars INC.',
     content: 'Working with Norhani has been an absolute game-changer for our development team. Her ability to quickly understand complex requirements and translate them into efficient, scalable code is impressive. She consistently delivered clean, high-quality work on time, and often went above and beyond by suggesting improvements that saved us time and resources. Her professionalism and problem-solving mindset make them a true asset to any tech project.',
-    avatar: 'Naeem.png',
+    avatar: 'naeem.png',
     colorClasses: {
       border: 'border-purple-500',
       text: 'text-purple-400',
@@ -100,7 +100,7 @@ const Testimonials = () => {
   return (
     <section className="py-16 md:py-20 relative">
       <div className="container mx-auto px-4">
-        <h2 className="text-2xl sm:text-3xl font-bold mb-3 sm:mb-4 text-center">What Coworkers Are Saying</h2>
+        <h2 className="text-2xl sm:text-3xl font-bold mb-3 sm:mb-4 text-center">From The People I Have Worked With</h2>
         <p className="text-sm sm:text-base text-gray-400 text-center mb-8 sm:mb-12 max-w-2xl mx-auto px-4">
             Hear from the people who have worked with me
         </p>
