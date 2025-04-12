@@ -1,7 +1,7 @@
 'use client';
-import React, { useState } from 'react';
 import { useKeenSlider } from 'keen-slider/react';
 import 'keen-slider/keen-slider.min.css';
+import Image from 'next/image';
 
 interface Testimonial {
   name: string;
@@ -65,7 +65,7 @@ const testimonials: Testimonial[] = [
     name: 'John Leyban Lazada',
     role: 'Data Engineer',
     company: 'Newstars INC.',
-    content: 'Working with Daisy has been an absolute pleasure. She consistently thinks outside the box and brings fresh, creative ideas to the table. Whether it’s streamlining workflows or improving team collaboration, she’s always looking for ways to make the workplace better for everyone. Her proactive mindset and innovative approach make a real difference.',
+    content: 'Working with Norhani has been an absolute pleasure. She consistently thinks outside the box and brings fresh, creative ideas to the table. Whether it is streamlining workflows or improving team collaboration, she is always looking for ways to make the workplace better for everyone. Her proactive mindset and innovative approach make a real difference.',
     avatar: 'leyban.png',
     colorClasses: {
       border: 'border-green-500',
@@ -117,11 +117,18 @@ const Testimonials = () => {
                       <svg className={`w-8 h-8 ${testimonial.colorClasses.text} mb-4`} fill="currentColor" viewBox="0 0 24 24">
                         <path d="M14.017 21v-7.391c0-5.704 3.731-9.57 8.983-10.609l.995 2.151c-2.432.917-3.995 3.638-3.995 5.849h4v10h-9.983zm-14.017 0v-7.391c0-5.704 3.748-9.57 9-10.609l.996 2.151c-2.433.917-3.996 3.638-3.996 5.849h3.983v10h-9.983z" />
                       </svg>
-                      <p className="text-gray-300 mb-6 italic">"{testimonial.content}"</p>
+                      <p className="text-gray-300 mb-6 italic">&quot;{testimonial.content}&quot;</p>
                     </div>
 
                     <div className="p-6 pt-0 flex items-center">
-                      <img src={testimonial.avatar} alt={testimonial.name} className={`w-12 h-12 rounded-full border-2 ${testimonial.colorClasses.border} mr-4`} />
+                      <div className={`relative w-12 h-12 rounded-full border-2 ${testimonial.colorClasses.border} mr-4`}>
+                        <Image 
+                          src={`/${testimonial.avatar}`}
+                          alt={testimonial.name}
+                          fill
+                          className="rounded-full object-cover"
+                        />
+                      </div>
                       <div>
                         <h4 className="font-semibold text-white">{testimonial.name}</h4>
                         <p className="text-sm text-gray-400">{testimonial.role}, {testimonial.company}</p>
