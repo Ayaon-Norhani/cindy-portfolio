@@ -1,4 +1,4 @@
-# Mobile Developer Portfolio Template
+# Sotfware Developer Portfolio Template
 
 [Demo](https://www.devportfoliotemplates.com/portfolio-templates/mobile-developer)
 
