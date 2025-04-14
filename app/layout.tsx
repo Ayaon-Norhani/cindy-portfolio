@@ -54,8 +54,8 @@ export const metadata: Metadata = {
 		images: [
 			{
 				url: '/og-image.jpg',
-				width: 1200,
-				height: 630,
+				width: 5200,
+				height: 2900,
 				alt: 'Norhani Ayaon - Software Developer & Admin Support',
 			},
 		],

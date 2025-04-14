@@ -22,7 +22,7 @@ const testimonials: Testimonial[] = [
   {
     name: 'Brian Vergara',
     role: 'Frontend Developer',
-    company: 'Newstars INC.',
+    company: 'INC.',
     content: 'Collaborating with Norhani has been a great experience. She has a great understanding of system design and is always quick to support the front-end team with reliable APIs and thoughtful solutions. What stands out most is her attention to detail, clear communication, and ability to troubleshoot efficiently, all of which make our workflow smooth and productive. She plays an essential role on our team, and I really value working with her.',
     avatar: 'brian.png',
     colorClasses: {
@@ -36,7 +36,7 @@ const testimonials: Testimonial[] = [
   {
     name: 'Naeem Mangcol Jr.',
     role: 'Backend Developer',
-    company: 'Newstars INC.',
+    company: 'INC.',
     content: 'Working with Norhani has been an absolute game-changer for our development team. Her ability to quickly understand complex requirements and translate them into efficient, scalable code is impressive. She consistently delivered clean, high-quality work on time, and often went above and beyond by suggesting improvements that saved us time and resources. Her professionalism and problem-solving mindset make them a true asset to any tech project.',
     avatar: 'naeem.png',
     colorClasses: {
@@ -50,7 +50,7 @@ const testimonials: Testimonial[] = [
   {
     name: 'Basam Serad',
     role: 'Backend Developer',
-    company: 'Newstars INC.',
+    company: 'INC.',
     content: 'Working with Norhani Ayaon has been an absolute pleasure. Not only is Norhani an incredibly skilled software developer, but she is also a fantastic team player. Always approachable and ready to lend a helping hand, Norhani consistently goes above and beyond to provide support whenever needed. Her positive attitude and willingness to collaborate make her an invaluable colleague. Whether it is tackling complex problems or offering administrative support, her dedication and reliability truly stand out.',
     avatar: 'basam.png',
     colorClasses: {
@@ -64,7 +64,7 @@ const testimonials: Testimonial[] = [
   {
     name: 'John Leyban Lazada',
     role: 'Data Engineer',
-    company: 'Newstars INC.',
+    company: 'INC.',
     content: 'Working with Norhani has been an absolute pleasure. She consistently thinks outside the box and brings fresh, creative ideas to the table. Whether it is streamlining workflows or improving team collaboration, she is always looking for ways to make the workplace better for everyone. Her proactive mindset and innovative approach make a real difference.',
     avatar: 'leyban.png',
     colorClasses: {
