@@ -1,34 +1,4 @@
-# Sotfware Developer Portfolio Template
 
-[Demo](https://www.devportfoliotemplates.com/portfolio-templates/mobile-developer)
-
-## Getting Started
-
-You have two options to get started with this template:
-
-### Option 1: Using Git Sparse Checkout
-
-If you want to clone only this specific template:
-
-```bash
-git clone --no-checkout https://github.com/devportfoliotemplates/devportfoliotemplates.git
-cd devportfoliotemplates
-git sparse-checkout init --cone
-git sparse-checkout set mobile-developer-portfolio-template
-git checkout
-```
-
-### Option 2: Direct Download
-
-You can download this template as a ZIP file:
-
-1. Visit [download-directory.github.io](https://download-directory.github.io/)
-2. Paste the URL of this portfolio folder: `https://github.com/devportfoliotemplates/devportfoliotemplates/tree/main/mobile-developer-portfolio-template`
-3. Download and extract the ZIP file
-
-### Running the Template
-
-Once you have the template:
 
 1. Install dependencies:
 
@@ -127,14 +97,3 @@ Follow these steps to deploy your portfolio for free using GitHub and Vercel:
    - Vercel will automatically detect Next.js
    - Click "Deploy"
 
-Your portfolio will be live in minutes with a free Vercel domain (e.g., `your-repo.vercel.app`). You can later add a custom domain in your Vercel project settings.
-
-## Support
-
-If you find these templates helpful, please consider:
-
-- Starring the repository ⭐
-- Sharing with other developers
-- [Buying me a coffee](https://www.buymeacoffee.com/andreiancu) ☕
-
-For issues and feature requests, please [create an issue](https://github.com/devportfoliotemplates/devportfoliotemplates/issues).

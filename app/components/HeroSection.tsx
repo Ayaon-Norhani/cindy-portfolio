@@ -1,10 +1,13 @@
 'use client';
 
 import { motion } from 'framer-motion';
+import Navbar from './NavbarSection';
 
 const HeroSection = () => {
 	return (
-		<section className="relative min-h-[80vh] flex items-center justify-center overflow-hidden py-16 sm:py-20">
+		<>
+		<Navbar />
+		<section id="home" className="relative min-h-[80vh] flex items-center justify-center overflow-hidden py-16 sm:py-20">
 			<div className="absolute inset-0 z-0">
 				<div className="absolute top-0 left-0 w-full h-full bg-[radial-gradient(ellipse_at_center,_var(--tw-gradient-stops))] from-blue-500/20 via-transparent to-transparent"></div>
 				<div className="absolute bottom-0 right-0 w-full h-full bg-[radial-gradient(ellipse_at_center,_var(--tw-gradient-stops))] from-purple-500/20 via-transparent to-transparent"></div>
@@ -26,7 +29,7 @@ const HeroSection = () => {
 						</h1>
 
 						<h2 className="text-lg sm:text-xl md:text-3xl font-semibold mb-8 bg-clip-text text-transparent bg-gradient-to-r from-gray-100 to-gray-300">
-							Software Developer & Admin Support
+							Software Developer, IT & Admin Support
 						</h2>
 
 						<p className="text-base sm:text-lg md:text-xl text-gray-400 max-w-2xl mx-auto leading-relaxed px-4">
@@ -109,6 +112,7 @@ const HeroSection = () => {
 				</div>
 			</div>
 		</section>
+		</>
 	);
 };
 
