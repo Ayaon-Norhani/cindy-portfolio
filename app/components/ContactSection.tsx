@@ -3,7 +3,7 @@ import { motion } from 'framer-motion';
 
 const ContactSection = () => {
   return (
-    <section className="py-20 px-4 bg-gradient-to-b from-gray-900 to-black">
+    <section id='contact' className="py-20 px-4 bg-gradient-to-b from-gray-900 to-black">
       <div className="max-w-4xl mx-auto">
         <motion.div 
           initial={{ opacity: 0, y: 20 }} 

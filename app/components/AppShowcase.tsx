@@ -30,7 +30,7 @@ const apps: App[] = [
 
 const AppShowcase = () => {
 	return (
-		<section className="py-16 md:py-20 relative">
+		<section id="projects" className="py-16 md:py-20 relative">
 			<div className="container mx-auto px-4">
 				<h2 className="text-2xl sm:text-3xl font-bold mb-8 sm:mb-12 text-center">Projects</h2>
 				<div className="grid grid-cols-1 md:grid-cols-2 gap-6 sm:gap-8 max-w-6xl mx-auto">

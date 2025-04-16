@@ -85,7 +85,7 @@ export const metadata: Metadata = {
 		canonical: 'https://norhani.vercel.app',
 	},
 	other: {
-		email: 'mailto:norhaniayaon@gmail.com',
+		email: 'mailto:norhani.ayaon@gmail.com',
 		linkedin: 'https://www.linkedin.com/in/norhani-ayaon/',
 		github: 'https://github.com/Ayaon-Norhani',
 	},
