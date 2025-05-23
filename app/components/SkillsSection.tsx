@@ -8,6 +8,7 @@ interface Skill {
 const skills: Skill[] = [
   { name: 'Go', level: 80 },
   { name: 'JavaScript', level: 70 },
+  { name: 'Python', level: 80 },
   { name: 'HTML', level: 85 },
   { name: 'CSS', level: 90 },
   { name: 'Postman', level: 88 },
@@ -40,7 +41,7 @@ const SkillsSection = () => {
               </svg>
               Core Technologies
             </h3>
-            {skills.slice(0, 7).map((skill) => (
+            {skills.slice(0, 8).map((skill) => (
               <div key={skill.name} className="group relative">
                 <div className="flex flex-wrap sm:flex-nowrap justify-between mb-2 gap-2">
                   <div className="flex flex-wrap sm:flex-nowrap items-center gap-2">
@@ -52,6 +53,9 @@ const SkillsSection = () => {
                       )}
                       {skill.name === 'JavaScript' && (
                         <span className="px-2 py-0.5 text-xs rounded-full bg-purple-500/10 text-purple-400 border border-purple-500/20">Cross-platform, Web (Frontend & Backend)</span>
+                      )}
+                      {skill.name === 'Python' && (
+                        <span className="px-2 py-0.5 text-xs rounded-full bg-blue-500/10 text-blue-400 border border-blue-500/20">Cross-Platform</span>
                       )}
                       {skill.name === 'HTML' && (
                         <span className="px-2 py-0.5 text-xs rounded-full bg-green-500/10 text-green-400 border border-green-500/20">Web (Frontend)</span>
@@ -106,7 +110,7 @@ const SkillsSection = () => {
               Specialized Skills
             </h3>
             <div className="grid grid-cols-1 sm:grid-cols-2 gap-4">
-              {skills.slice(7).map((skill) => (
+              {skills.slice(8).map((skill) => (
                 <div
                   key={skill.name}
                   className="group bg-gray-800/30 backdrop-blur-sm p-4 rounded-xl border border-gray-700/50 hover:border-purple-500/50 transition-colors relative overflow-hidden"
