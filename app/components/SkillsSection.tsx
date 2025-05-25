@@ -14,6 +14,11 @@ const skills: Skill[] = [
   { name: 'Postman', level: 88 },
   { name: 'PostgreSQL', level: 85 },
   { name: 'MySQL', level: 88 },
+  { name: 'MongoDB', level: 85 },
+  { name: 'Elasticsearch', level: 70 },
+  { name: 'Linux', level: 90 },
+  { name: 'MacOS', level: 90 },
+  { name: 'Docker', level: 80 },
   { name: 'Network troubleshooting', level: 85 },
   { name: 'System management', level: 90 },
   { name: 'Project management', level: 95 },
@@ -21,6 +26,8 @@ const skills: Skill[] = [
   { name: 'Adobe Photoshop', level: 90 },
   { name: 'Data Entry & Database Management', level: 95 },
   { name: 'Time & Task Management Tools', level: 95 },
+  { name: 'Virtual Assistance', level: 95 },
+  { name: 'Documentation & Reporting', level: 95 },
 ];
 
 const SkillsSection = () => {
@@ -41,7 +48,7 @@ const SkillsSection = () => {
               </svg>
               Core Technologies
             </h3>
-            {skills.slice(0, 8).map((skill) => (
+            {skills.slice(0, 13).map((skill) => (
               <div key={skill.name} className="group relative">
                 <div className="flex flex-wrap sm:flex-nowrap justify-between mb-2 gap-2">
                   <div className="flex flex-wrap sm:flex-nowrap items-center gap-2">
@@ -54,9 +61,42 @@ const SkillsSection = () => {
                       {skill.name === 'JavaScript' && (
                         <span className="px-2 py-0.5 text-xs rounded-full bg-purple-500/10 text-purple-400 border border-purple-500/20">Cross-platform, Web (Frontend & Backend)</span>
                       )}
-                      {skill.name === 'Python' && (
-                        <span className="px-2 py-0.5 text-xs rounded-full bg-blue-500/10 text-blue-400 border border-blue-500/20">Cross-Platform</span>
-                      )}
+                     {skill.name === 'Python' && (
+                      <span className="px-2 py-0.5 text-xs rounded-full bg-yellow-500/10 text-yellow-500 border border-yellow-500/20">
+                        Programming Language
+                      </span>
+                    )}
+
+                    {skill.name === 'MongoDB' && (
+                      <span className="px-2 py-0.5 text-xs rounded-full bg-green-500/10 text-green-500 border border-green-500/20">
+                        NoSQL Database
+                      </span>
+                    )}
+
+                    {skill.name === 'Elasticsearch' && (
+                      <span className="px-2 py-0.5 text-xs rounded-full bg-orange-500/10 text-orange-500 border border-orange-500/20">
+                        Search Engine
+                      </span>
+                    )}
+
+                    {skill.name === 'Linux' && (
+                      <span className="px-2 py-0.5 text-xs rounded-full bg-gray-500/10 text-gray-500 border border-gray-500/20">
+                        Operating System
+                      </span>
+                    )}
+
+                    {skill.name === 'MacOS' && (
+                      <span className="px-2 py-0.5 text-xs rounded-full bg-gray-500/10 text-gray-500 border border-gray-500/20">
+                        Operating System
+                      </span>
+                    )}
+
+                    {skill.name === 'Docker' && (
+                      <span className="px-2 py-0.5 text-xs rounded-full bg-blue-500/10 text-blue-500 border border-blue-500/20">
+                        Container Platform
+                      </span>
+                    )}
+
                       {skill.name === 'HTML' && (
                         <span className="px-2 py-0.5 text-xs rounded-full bg-green-500/10 text-green-400 border border-green-500/20">Web (Frontend)</span>
                       )}
@@ -110,7 +150,7 @@ const SkillsSection = () => {
               Specialized Skills
             </h3>
             <div className="grid grid-cols-1 sm:grid-cols-2 gap-4">
-              {skills.slice(8).map((skill) => (
+              {skills.slice(13).map((skill) => (
                 <div
                   key={skill.name}
                   className="group bg-gray-800/30 backdrop-blur-sm p-4 rounded-xl border border-gray-700/50 hover:border-purple-500/50 transition-colors relative overflow-hidden"
@@ -173,6 +213,27 @@ const SkillsSection = () => {
                               <path d="M11.99 2C6.47 2 2 6.48 2 12s4.47 10 9.99 10C17.52 22 22 17.52 22 12S17.52 2 11.99 2zM12 20c-4.42 0-8-3.58-8-8s3.58-8 8-8 8 3.58 8 8-3.58 8-8 8zm.5-13H11v6l5.25 3.15.75-1.23-4.5-2.67z"/>
                             </svg>
                           );
+                          case 'Team Leadership':
+                            return (
+                              <svg className="absolute -right-4 -bottom-4 w-24 h-24 text-lime-500 transform rotate-12" viewBox="0 0 24 24" fill="currentColor">
+                                <path d="M12 5c1.66 0 3-1.34 3-3S13.66-1 12-1 9 0.34 9 2s1.34 3 3 3zm0 2c-2.67 0-8 1.34-8 4v5h4v5h8v-5h4v-5c0-2.66-5.33-4-8-4z"/>
+                              </svg>
+                            );
+
+                          case 'Virtual Assistance':
+                            return (
+                              <svg className="absolute -right-4 -bottom-4 w-24 h-24 text-cyan-500 transform rotate-12" viewBox="0 0 24 24" fill="currentColor">
+                                <path d="M12 12c2.21 0 4-1.79 4-4S14.21 4 12 4 8 5.79 8 8s1.79 4 4 4zm0 2c-2.67 0-8 1.34-8 4v2h16v-2c0-2.66-5.33-4-8-4z"/>
+                              </svg>
+                            );
+
+                          case 'Documentation & Reporting':
+                            return (
+                              <svg className="absolute -right-4 -bottom-4 w-24 h-24 text-gray-600 transform rotate-12" viewBox="0 0 24 24" fill="currentColor">
+                                <path d="M14 2H6c-1.1 0-2 .9-2 2v16a2 2 0 002 2h12c1.1 0 2-.9 2-2V8l-6-6zM13 9V3.5L18.5 9H13zM8 15h8v2H8v-2zm0-4h8v2H8v-2z"/>
+                              </svg>
+                            );
+
                         default:
                           return (
                             <svg className="absolute -right-4 -bottom-4 w-24 h-24 text-gray-500 transform rotate-12" viewBox="0 0 24 24" fill="currentColor">
